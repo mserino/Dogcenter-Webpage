@@ -8,6 +8,7 @@ var hbs = require('hbs');
 var nodemailer = require('nodemailer');
 
 var routes = require('./routes/index');
+var contact = require('./routes/contact');
 
 var app = express();
 
@@ -25,6 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 hbs.registerPartials(__dirname + '/views/partials');
 
 app.use('/', routes);
+app.use('/contact', contact);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
