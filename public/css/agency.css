@@ -4,6 +4,7 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -175,7 +176,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    font-family: 'Alegreya',"Helvetica Neue",Helvetica,Arial,serif;
     color: #fed136;
 }
 
@@ -253,7 +254,7 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #222;
+        background-color: #2B558C;
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -265,7 +266,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/header-bg.jpg);
+    background-image: url(../img/grassblue.jpg);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -296,9 +297,25 @@ header .intro-text .intro-heading {
     line-height: 50px;
 }
 
+header .img {
+    position: relative;
+    margin: 0 auto;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: 300px;
+    width: 300px;
+    height: 300px;
+}
+
+header img {
+    width: 300px;
+}
+
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 300px;
+        padding-top: 170px;
         padding-bottom: 200px;
     }
 
@@ -662,6 +679,10 @@ section#contact .section-heading {
     color: #fff;
 }
 
+section#contact .service-heading {
+    color: #fff;
+}
+
 section#contact .form-group {
     margin-bottom: 25px;
 }
@@ -714,6 +735,16 @@ section#contact:-ms-input-placeholder {
 
 section#contact .text-danger {
     color: #e74c3c;
+}
+
+section#contact ul.social-buttons li a {
+    background-color: #2B558C;
+}
+
+section#contact ul.social-buttons li a:hover,
+section#contact ul.social-buttons li a:focus,
+section#contact ul.social-buttons li a:active {
+    background-color: #fed136;
 }
 
 footer {
@@ -859,4 +890,18 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #fed136;
+}
+
+#map {
+  height: 400px;
+}
+
+section#portfolio .activity {
+    min-height: 450px;
+}
+
+.carousel img {
+    position: relative;
+    margin: 0 auto;
+    max-height: 400px;
 }

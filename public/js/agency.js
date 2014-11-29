@@ -24,3 +24,18 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+// map
+$(document).ready(function(){
+	var map = new GMaps({
+	  el: '#map',
+	  lat: 42.055219,
+	  lng: 12.371405
+	});
+
+	map.addMarker({
+	  lat: 42.055219,
+	  lng: 12.371405,
+	  title: 'Duffland',
+	});
+});
